@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(25, 25, 25);
+}
+
+.header {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Arial;
+  color: white;
+}
+
+img {
+  width: 50px;
+}
+
+.game-button {
+  margin-left: 10px;
+  width: 120px;
+  height: 120px;
+  background-color: rgb(25, 25, 25);
+  border-color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 60px;
+}
+
+button:hover {
+  background-color: rgb(210, 255, 146);
+  cursor: pointer;
+}
+
+button:active {
+  background-color: rgb(143, 143, 250);
+}
+
+.reset-button {
+  background-color: white;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.score {
+  color: white;
+  font-family: Arial;
+  margin-top: 100px;
+}
