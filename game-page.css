@@ -2,6 +2,10 @@ body {
   background-color: rgb(25, 25, 25);
 }
 
+p {
+  color: white;
+}
+
 .header {
   font-size: 30px;
   font-weight: bold;
@@ -22,6 +26,7 @@ img {
   border-width: 3px;
   border-style: solid;
   border-radius: 60px;
+  margin-bottom: 30px;
 }
 
 button:hover {
@@ -44,5 +49,16 @@ button:active {
 .score {
   color: white;
   font-family: Arial;
-  margin-top: 100px;
+  margin-top: 30px;
+}
+
+.result {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Arial;
+  color: white;
+}
+
+.moves {
+  margin-bottom: 60px;
 }
