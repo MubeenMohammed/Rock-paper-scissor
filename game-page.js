@@ -93,3 +93,21 @@ function displayMoves(playerMove, computerMove) {
   const movesElement = document.querySelector(".js-moves");
   movesElement.innerHTML = `You <img src="Resources/${playerMove}-emoji.png"> <img src="Resources/${computerMove}-emoji.png"> Computer `;
 }
+
+let isAutoPlaying = false;
+let intervalID;
+
+function autoPlay() {
+  const autoplayElement = document.querySelector(".js-autoplay");
+  if (!isAutoPlaying) {
+    intervalID = setInterval(function () {
+      play(getComputerMove());
+    }, 1000);
+    autoplayElement.innerHTML = "Stop Play";
+    isAutoPlaying = true;
+  } else {
+    clearInterval(intervalID);
+    autoplayElement.innerHTML = "Auto Play";
+    isAutoPlaying = false;
+  }
+}
